@@ -1,0 +1,126 @@
+body{
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+}
+
+h1{
+    font-size: 90px;
+}
+
+header{
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+}
+
+footer{
+    background-color: black;
+}
+
+section{
+    height: 800px;
+}
+
+.pattern{
+    background-image: url("../img/backgrounds/pattern.png");
+    background-repeat: repeat;    
+}
+
+.wrapper{
+    width: 1600px;
+    max-width: 1600px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin: 0 auto; 
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);   
+    align-items: center;          
+}
+
+header, footer, section {
+    width: 100%;
+}
+
+header nav .wrapper{       
+    padding-left: 0px;      
+}
+
+header nav .container{ 
+    grid-template-columns: 400px 1120px 60px;    
+    grid-auto-rows: minmax(100px, auto);      
+}
+
+header nav a, header nav a:hover{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+header nav .logo{
+    font-family: "Yeseva One";
+    font-size: 46px;              
+    line-height: 1.2;
+    text-transform: uppercase;
+}  
+
+header nav .inner-links{
+    font-family: "Gentium Basic";
+    font-weight: bold;
+    font-size: 21px;
+    justify-self: end;                  
+}
+
+header nav .inner-links a{
+    display: table-cell;
+    vertical-align: middle;
+    height: 100px;
+    padding: 0 20px;  
+}
+
+header nav .outer-links {
+    font-size: 21px;
+    justify-self: end; 
+}
+
+header nav .outer-links a{
+    color: #dab33e;
+}
+
+.promo{
+    background-image: url("../img/backgrounds/promo.png");
+    background-size: cover;
+}
+
+.promo .wrapper{
+    padding: 200px 20px 100px 20px;      
+}
+
+.promo .container {
+    grid-auto-rows: minmax(100px, auto);
+    justify-items: center;
+}
+
+.promo .container .title, .promo .container .ornament, .promo .container .inner-links{
+    grid-column-start: 1;         
+    grid-column-end: 13;  
+}
+
+.promo .title{    
+    font-size: 90px;
+    font-family: "Yeseva One";    
+    text-align: center;              
+}
+
+.ingredients{
+    background-image: url("../img/backgrounds/ingredients.png");
+    background-size: cover;
+}
+
+.reviews{
+    background-image: url("../img/backgrounds/reviews.png");
+    background-size: cover;
+}
+  
