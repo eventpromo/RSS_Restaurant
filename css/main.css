@@ -7,6 +7,8 @@ body{
 
 h1{
     font-size: 90px;
+    padding: 0px;
+    margin: 0px;
 }
 
 header{
@@ -20,7 +22,7 @@ footer{
 }
 
 section{
-    height: 800px;
+    min-height: 400px;
 }
 
 .pattern{
@@ -42,6 +44,34 @@ section{
     align-items: center;          
 }
 
+
+.big-divider{
+    height: 45px;
+    display: block;
+    background-image: url("../img/backgrounds/big-divider.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.dark-divider{
+    height: 45px;
+    display: block;
+    background-image: url("../img/backgrounds/dark-divider.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.light-divider{
+    height: 45px;
+    display: block;
+    background-image: url("../img/backgrounds/light-divider.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 header, footer, section {
     width: 100%;
 }
@@ -52,7 +82,7 @@ header nav .wrapper{
 
 header nav .container{ 
     grid-template-columns: 400px 1120px 60px;    
-    grid-auto-rows: minmax(100px, auto);      
+    grid-auto-rows: minmax(160px, auto);      
 }
 
 header nav a, header nav a:hover{
@@ -68,16 +98,13 @@ header nav .logo{
 }  
 
 header nav .inner-links{
-    font-family: "Gentium Basic";
+    font-family: "Gentium Book Basic";
     font-weight: bold;
     font-size: 21px;
     justify-self: end;                  
 }
 
-header nav .inner-links a{
-    display: table-cell;
-    vertical-align: middle;
-    height: 100px;
+header nav .inner-links a{    
     padding: 0 20px;  
 }
 
@@ -96,23 +123,44 @@ header nav .outer-links a{
 }
 
 .promo .wrapper{
-    padding: 200px 20px 100px 20px;      
-}
-
-.promo .container {
-    grid-auto-rows: minmax(100px, auto);
-    justify-items: center;
-}
-
-.promo .container .title, .promo .container .ornament, .promo .container .inner-links{
-    grid-column-start: 1;         
-    grid-column-end: 13;  
+    padding: 160px 20px 145px 20px;      
 }
 
 .promo .title{    
+    margin-top: 80px;
     font-size: 90px;
     font-family: "Yeseva One";    
     text-align: center;              
+}
+
+.promo .big-divider{
+    margin: 35px 0;
+}
+
+.promo .inner-links{
+    font-size: 0;
+    text-align: center;
+}
+
+.promo .inner-links a{
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid #ffffff;
+    display: inline-block;    
+    letter-spacing: 0;
+    padding: 23px;
+    min-width: 230px;
+    font-size: 18px;
+    font-family: Lato;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 15px;
+}
+
+.promo .inner-links a:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid #000000;
 }
 
 .ingredients{
