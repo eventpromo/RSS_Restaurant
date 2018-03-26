@@ -6,7 +6,15 @@ body{
 }
 
 h1{
+    font-family: "Yeseva One";
     font-size: 90px;
+    padding: 0px;
+    margin: 0px;
+}
+
+h3{    
+    font-family: "Yeseva One";
+    font-size: 36px;
     padding: 0px;
     margin: 0px;
 }
@@ -39,7 +47,6 @@ footer{
     align-items: center;          
 }
 
-
 .big-divider{
     height: 45px;
     display: block;
@@ -47,6 +54,7 @@ footer{
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    margin: 35px 0;
 }
 
 .dark-divider{
@@ -56,6 +64,7 @@ footer{
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    margin: 10px 0;
 }
 
 .light-divider{
@@ -65,6 +74,7 @@ footer{
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    margin: 10px 0;
 }
 
 header, footer, section {
@@ -131,10 +141,6 @@ header nav .outer-links a{
     text-align: center;              
 }
 
-.promo .big-divider{
-    margin: 35px 0;
-}
-
 .promo .inner-links{
     font-size: 0;
     text-align: center;
@@ -160,12 +166,17 @@ header nav .outer-links a{
     background-color: rgba(0, 0, 0, 0.2);
     border: 1px solid #000000;
 }
+
 .about{
     color: #4c4c4c;
     font-family: Lato;
     font-size: 16px;
     text-align: center;
     text-justify: auto;
+ 
+}
+
+.about .wrapper{
     padding: 50px 0 35px 0;
 }
 
@@ -177,11 +188,8 @@ header nav .outer-links a{
     align-self: end;
 }
 
-.about .title p{
-    color: #cc9900;
-    font-family: "Yeseva One";
-    font-size: 36px;
-    margin: 10px 0;
+.about .title h3{
+    color: #cc9900;   
 }
 
 .about .text{
@@ -190,6 +198,7 @@ header nav .outer-links a{
     grid-row-start: 2; 
     grid-row-end: 3;
     margin: 0 -20px;    
+    line-height: 1.6;
 }
 
 .about .cook{
@@ -213,7 +222,32 @@ header nav .outer-links a{
 
 .ingredients{
     background-image: url("../img/backgrounds/ingredients.png");
-    background-size: cover;
+    background-size: cover;    
+    font-family: Lato;
+    font-size: 16px;
+    text-align: center;
+    text-justify: auto;
+}
+
+.ingredients .wrapper{
+    padding: 100px 0;
+}
+
+.ingredients .content{
+    padding: 80px 100px;
+    grid-column-start: 7; 
+    grid-column-end: 13;    
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.33);
+}
+
+.ingredients .content p{
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+.ingredients .content img{
+    margin-top: 60px;
 }
 
 .reviews{
