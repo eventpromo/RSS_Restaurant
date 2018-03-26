@@ -19,6 +19,11 @@ h3{
     margin: 0px;
 }
 
+p{
+    line-height: 1.6;
+    margin: 15px 0;
+}
+
 header{
     background-color: transparent;
     position: absolute;
@@ -64,7 +69,7 @@ footer{
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    margin: 10px 0;
+    margin: 15px 0;
 }
 
 .light-divider{
@@ -74,7 +79,7 @@ footer{
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    margin: 10px 0;
+    margin: 15px 0;
 }
 
 header, footer, section {
@@ -180,44 +185,23 @@ header nav .outer-links a{
     padding: 50px 0 35px 0;
 }
 
-.about .title{
+.about .content{
     grid-column-start: 2; 
     grid-column-end: 6; 
-    grid-row-start: 1; 
-    grid-row-end: 2;
-    align-self: end;
+    margin: 0 -20px;     
 }
 
-.about .title h3{
+.about .content h3{
     color: #cc9900;   
 }
 
-.about .text{
-    grid-column-start: 2; 
-    grid-column-end: 6; 
-    grid-row-start: 2; 
-    grid-row-end: 3;
-    margin: 0 -20px;    
-    line-height: 1.6;
-}
-
-.about .cook{
-    grid-column-start: 2; 
-    grid-column-end: 6; 
-    grid-row-start: 3; 
-    grid-row-end: 4;
-    align-self: start;            
-}
-
-.about .cook img{
+.about .content img{
     margin-left: 75px;
 }
 
 .about .dish{
     grid-column-start: 6; 
-    grid-column-end: 13;
-    grid-row-start: 1; 
-    grid-row-end: 4;       
+    grid-column-end: 13;   
 }
 
 .ingredients{
@@ -234,20 +218,16 @@ header nav .outer-links a{
 }
 
 .ingredients .content{
-    padding: 80px 100px;
+    margin-left: 20px;
+    padding: 75px;
     grid-column-start: 7; 
     grid-column-end: 13;    
     text-align: center;
     background-color: rgba(0, 0, 0, 0.33);
 }
 
-.ingredients .content p{
-    margin-top: 20px;
-    line-height: 1.6;
-}
-
 .ingredients .content img{
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 .reviews{
