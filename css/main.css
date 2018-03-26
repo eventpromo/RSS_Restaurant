@@ -21,19 +21,14 @@ footer{
     background-color: black;
 }
 
-section{
-    min-height: 400px;
-}
-
 .pattern{
     background-image: url("../img/backgrounds/pattern.png");
     background-repeat: repeat;    
 }
 
 .wrapper{
-    width: 1600px;
-    max-width: 1600px;
-    padding: 0 20px;
+    width: 1170px;
+    max-width: 1170px;
     box-sizing: border-box;
     margin: 0 auto; 
 }
@@ -55,7 +50,7 @@ section{
 }
 
 .dark-divider{
-    height: 45px;
+    height: 24px;
     display: block;
     background-image: url("../img/backgrounds/dark-divider.png");
     background-position: center;
@@ -64,7 +59,7 @@ section{
 }
 
 .light-divider{
-    height: 45px;
+    height: 24px;
     display: block;
     background-image: url("../img/backgrounds/light-divider.png");
     background-position: center;
@@ -81,7 +76,7 @@ header nav .wrapper{
 }
 
 header nav .container{ 
-    grid-template-columns: 400px 1120px 60px;    
+    grid-template-columns: 1fr 710px 80px;    
     grid-auto-rows: minmax(160px, auto);      
 }
 
@@ -93,9 +88,12 @@ header nav a, header nav a:hover{
 header nav .logo{
     font-family: "Yeseva One";
     font-size: 46px;              
-    line-height: 1.2;
     text-transform: uppercase;
 }  
+
+header nav .logo a{
+    margin-left: -35px;
+}
 
 header nav .inner-links{
     font-family: "Gentium Book Basic";
@@ -161,6 +159,56 @@ header nav .outer-links a{
 .promo .inner-links a:hover{
     background-color: rgba(0, 0, 0, 0.2);
     border: 1px solid #000000;
+}
+.about{
+    color: #4c4c4c;
+    font-family: Lato;
+    font-size: 16px;
+    text-align: center;
+    text-justify: auto;
+    padding: 50px 0 35px 0;
+}
+
+.about .title{
+    grid-column-start: 2; 
+    grid-column-end: 6; 
+    grid-row-start: 1; 
+    grid-row-end: 2;
+    align-self: end;
+}
+
+.about .title p{
+    color: #cc9900;
+    font-family: "Yeseva One";
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.about .text{
+    grid-column-start: 2; 
+    grid-column-end: 6; 
+    grid-row-start: 2; 
+    grid-row-end: 3;
+    margin: 0 -20px;    
+}
+
+.about .cook{
+    grid-column-start: 2; 
+    grid-column-end: 6; 
+    grid-row-start: 3; 
+    grid-row-end: 4;
+    align-self: start;            
+}
+
+.about .cook img{
+    margin-left: 75px;
+}
+
+.about .dish{
+    grid-column-start: 6; 
+    grid-column-end: 13;
+    grid-row-start: 1; 
+    grid-row-end: 4;       
 }
 
 .ingredients{
