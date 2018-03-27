@@ -1,16 +1,22 @@
 body{
     padding: 0;
     margin: 0;
-    color: #ffffff;    
-    min-width: 1600px;
+    color: #ffffff;       
     font-family: Lato;
     font-size: 16px;    
+}
+
+.main-wrapper{
+    width: 100%;
+    min-width: 1600px;
+    min-height: calc(100vh - 320px);    
 }
 
 h1, h2, h3, h4, h5{
     font-family: "Yeseva One";    
     padding: 0px;
     margin: 0px;
+    font-weight: 400;
 }
 
 h1{   
@@ -36,8 +42,10 @@ header{
     top: 0;
 }
 
-footer{
-    background-color: black;
+body > footer{
+    background-color: #000000;    
+    height: 320px;
+    box-sizing: border-box;
 }
 
 .rhombus-pattern{
@@ -239,6 +247,7 @@ header nav .outer-links a{
 .menu{
     color: #4c4c4c;    
     text-align: center;
+    box-shadow: inset 0 0 50px rgba(1, 1, 1, 0.14);
     background-image: linear-gradient(-226deg, rgba(32, 90, 91, 0.09) 0%, rgba(255, 255, 255, 0.09) 100%);
 }
 
@@ -291,35 +300,81 @@ header nav .outer-links a{
 }
 
 .reviews .content{
-    padding: 100px 30px;
+    padding: 100px 74px 100px 35px;
     box-sizing: border-box;
     width: 770px;
-    margin: 0 auto;
-    text-align: center;
+    margin: 0 auto;    
     background-image: url("../img/backgrounds/reviews-content.png");
     background-size: cover;    
 }
 
-.reviews .content p{
+.reviews .review{
+    text-align: center;
+}
+
+.reviews .review p{
     color: #dde0df;
     font-family: "Gentium Book Basic";
     font-size: 25px;
     font-weight: bold;    
-    line-height: 45px;
+    line-height: 45px;    
 }
 
-.reviews .content p:after{
-    content: "”";
-    font-size: 96px;
+.reviews .review blockquote{
+    position: relative;
+    margin: 0;    
+    padding: 0 40px;
 }
 
-.reviews .content p:before{
+.reviews .review blockquote:before {
     content: "“";
+    color: #f2f4f4;
+    font-family: Georgia;
     font-size: 96px;
+    font-weight: 400;
+    opacity: 0.4;
+    position: absolute;
+    left: 0px;    
+    line-height: 0.6;
 }
 
-.reviews .content .author{
+.reviews .review footer{
     margin-top: 45px;
-    font-size: 18px;
+    font-size: 18px;    
 }
-  
+
+.reviews .review cite{
+    font-style: normal;
+}
+
+.reservations{
+    color: #4c4c4c;    
+    text-align: center;
+    background-image: linear-gradient(-13deg, rgba(12, 52, 53, 0.07) 0%, rgba(255, 255, 255, 0.07) 100%);
+    box-shadow: inset 0 0 50px rgba(1, 1, 1, 0.05);
+}
+
+.reservations .wrapper{
+    padding: 100px 0;
+}
+
+.reservations .content{
+    padding: 0 70px;
+    align-self: start;
+}
+
+.reservations h3{
+    color: #cc9900;   
+}
+
+.reservations .grid-container{
+    grid-template-columns: 1fr 1fr 2fr;   
+    grid-gap: 30px;    
+}
+
+.reservations form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;   
+    grid-template-rows: 1fr 1fr 1fr;   
+    grid-gap: 30px;    
+}
