@@ -38,8 +38,13 @@ p{
 
 header{
     background-color: transparent;
-    position: absolute;
+    position: fixed;
     top: 0;
+    background-image: linear-gradient(180deg, rgba(1, 1, 1, 0.5) 0%, rgba(1, 1, 1, 0) 100%);       
+}
+
+header, footer, section {
+    width: 100%;
 }
 
 body > footer{
@@ -101,52 +106,70 @@ body > footer{
     margin: 15px 0;
 }
 
-header, footer, section {
-    width: 100%;
-}
-
-header nav .wrapper{       
-    padding-left: 0px;      
-}
-
-header nav .grid-container{ 
-    grid-template-columns: 1fr 710px 80px;    
-    grid-auto-rows: minmax(160px, auto);      
-}
-
-header nav a, header nav a:hover{
+header a, header a:hover{
     text-decoration: none;
     color: #ffffff;
 }
 
-header nav .logo{
-    font-family: "Yeseva One";
-    font-size: 46px;              
-    text-transform: uppercase;
+header .wrapper{
+    display: table;
+    height: 100%;    
+}
+
+header .logo{            
+    display: table-cell; 
+    vertical-align: middle; 
 }  
 
-header nav .logo a{
+header .logo a{
     margin-left: -35px;
 }
 
-header nav .inner-links{
+header nav{
     font-family: "Gentium Book Basic";
-    font-weight: bold;
+    font-weight: bold;    
+    display: table-cell;  
+    vertical-align: middle;
+    text-align: right;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    overflow: hidden;
+    font-size: 0;
+}
+
+header nav li {
+    display: inline-block; 
+    height: 100%;     
+    padding: 65px 25px;         
+    box-sizing: border-box;
+}
+
+header nav li:hover{
+    border-top: 6px solid rgba(255, 255, 255, 0.4);
+}
+
+header nav li.active{
+    border-top: 6px solid rgba(255, 255, 255, 0.4);
+}
+
+header nav a{
     font-size: 21px;
-    justify-self: end;                  
 }
 
-header nav .inner-links a{    
-    padding: 0 20px;  
+header .social-icons {        
+    display: table-cell;  
+    vertical-align: middle; 
 }
 
-header nav .outer-links {
-    font-size: 21px;
-    justify-self: end; 
-}
-
-header nav .outer-links a{
+header .social-icons a{
     color: #dab33e;
+    font-size: 21px;
 }
 
 .promo{
@@ -377,4 +400,8 @@ header nav .outer-links a{
     grid-template-columns: 1fr 1fr;   
     grid-template-rows: 1fr 1fr 1fr;   
     grid-gap: 30px;    
+}
+
+.reservations .input-block{
+
 }
