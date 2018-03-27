@@ -3,24 +3,30 @@ body{
     margin: 0;
     color: #ffffff;    
     min-width: 1600px;
+    font-family: Lato;
+    font-size: 16px;    
 }
 
-h1{
-    font-family: "Yeseva One";
+h1, h2, h3, h4, h5{
+    font-family: "Yeseva One";    
+    padding: 0px;
+    margin: 0px;
+}
+
+h1{   
     font-size: 90px;
-    padding: 0px;
-    margin: 0px;
 }
 
-h3{    
-    font-family: "Yeseva One";
+h3{        
     font-size: 36px;
-    padding: 0px;
-    margin: 0px;
+}
+
+h4{    
+    font-size: 21px;    
 }
 
 p{
-    line-height: 1.6;
+    line-height: 1.6;    
     margin: 15px 0;
 }
 
@@ -34,9 +40,14 @@ footer{
     background-color: black;
 }
 
-.pattern{
-    background-image: url("../img/backgrounds/pattern.png");
-    background-repeat: repeat;    
+.rhombus-pattern{
+    background-image: url("../img/backgrounds/rhombus-pattern.png");
+    background-repeat: repeat;   
+}
+
+.circle-pattern{
+    background-image: url("../img/backgrounds/circle-pattern.png");
+    background-repeat: repeat;   
 }
 
 .wrapper{
@@ -46,7 +57,7 @@ footer{
     margin: 0 auto; 
 }
 
-.container{
+.grid-container{
     display: grid;
     grid-template-columns: repeat(12, 1fr);   
     align-items: center;          
@@ -90,7 +101,7 @@ header nav .wrapper{
     padding-left: 0px;      
 }
 
-header nav .container{ 
+header nav .grid-container{ 
     grid-template-columns: 1fr 710px 80px;    
     grid-auto-rows: minmax(160px, auto);      
 }
@@ -160,7 +171,6 @@ header nav .outer-links a{
     padding: 23px;
     min-width: 230px;
     font-size: 18px;
-    font-family: Lato;
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
@@ -173,12 +183,10 @@ header nav .outer-links a{
 }
 
 .about{
-    color: #4c4c4c;
-    font-family: Lato;
-    font-size: 16px;
+    color: #4c4c4c;    
     text-align: center;
-    text-justify: auto;
- 
+    background-image: linear-gradient(-43deg, rgba(1, 1, 1, 0.09) 0%, rgba(255, 255, 255, 0.09) 100%);
+    box-shadow: inset 0 0 50px rgba(1, 1, 1, 0.14);
 }
 
 .about .wrapper{
@@ -191,7 +199,7 @@ header nav .outer-links a{
     margin: 0 -20px;     
 }
 
-.about .content h3{
+.about h3{
     color: #cc9900;   
 }
 
@@ -206,9 +214,7 @@ header nav .outer-links a{
 
 .ingredients{
     background-image: url("../img/backgrounds/ingredients.png");
-    background-size: cover;    
-    font-family: Lato;
-    font-size: 16px;
+    background-size: cover;        
     text-align: center;
     text-justify: auto;
 }
@@ -230,8 +236,90 @@ header nav .outer-links a{
     margin-top: 40px;
 }
 
+.menu{
+    color: #4c4c4c;    
+    text-align: center;
+    background-image: linear-gradient(-226deg, rgba(32, 90, 91, 0.09) 0%, rgba(255, 255, 255, 0.09) 100%);
+}
+
+.menu .wrapper{
+    padding: 30px 0;
+}
+
+.menu .grid-container{
+    grid-template-columns: repeat(2, 1fr);   
+    grid-gap: 30px;    
+}
+
+.menu h2, .menu h3{
+    color: #cc9900;   
+}
+
+.menu h4{
+    color: #c89f2d;   
+    text-transform: capitalize;
+}
+
+.menu hr{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #c89f2d;    
+    padding: 0; 
+    margin: 10px 0 0 0;
+}
+
+.menu .meal {    
+    margin: 70px;
+}
+
+.menu .dish{    
+    text-align: left;
+}
+
+.menu .price{
+    float: right;    
+}
+
 .reviews{
     background-image: url("../img/backgrounds/reviews.png");
     background-size: cover;
+}
+
+.reviews .wrapper{
+    padding: 100px 0;
+}
+
+.reviews .content{
+    padding: 100px 30px;
+    box-sizing: border-box;
+    width: 770px;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url("../img/backgrounds/reviews-content.png");
+    background-size: cover;    
+}
+
+.reviews .content p{
+    color: #dde0df;
+    font-family: "Gentium Book Basic";
+    font-size: 25px;
+    font-weight: bold;    
+    line-height: 45px;
+}
+
+.reviews .content p:after{
+    content: "”";
+    font-size: 96px;
+}
+
+.reviews .content p:before{
+    content: "“";
+    font-size: 96px;
+}
+
+.reviews .content .author{
+    margin-top: 45px;
+    font-size: 18px;
 }
   
