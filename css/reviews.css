@@ -1,0 +1,58 @@
+
+
+.reviews{
+    background-image: url("../img/backgrounds/reviews.png");
+    background-size: cover;
+}
+
+.reviews .wrapper{
+    padding: 100px 0;
+}
+
+.reviews .content{
+    padding: 100px 74px 100px 35px;
+    box-sizing: border-box;
+    width: 770px;
+    margin: 0 auto;    
+    background-image: url("../img/backgrounds/reviews-content.png");
+    background-size: cover;    
+}
+
+.reviews .review{
+    text-align: center;
+}
+
+.reviews .review p{
+    color: #dde0df;
+    font-family: "Gentium Book Basic";
+    font-size: 25px;
+    font-weight: bold;    
+    line-height: 45px;    
+}
+
+.reviews .review blockquote{
+    position: relative;
+    margin: 0;    
+    padding: 0 40px;
+}
+
+.reviews .review blockquote:before {
+    content: "“";
+    color: #f2f4f4;
+    font-family: Georgia;
+    font-size: 96px;
+    font-weight: 400;
+    opacity: 0.4;
+    position: absolute;
+    left: 0px;    
+    line-height: 0.6;
+}
+
+.reviews .review footer{
+    margin-top: 45px;
+    font-size: 18px;    
+}
+
+.reviews .review cite{
+    font-style: normal;
+}

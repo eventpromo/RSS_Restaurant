@@ -1,0 +1,41 @@
+
+.promo{
+    background-image: url("../img/backgrounds/promo.png");
+    background-size: cover;
+}
+
+.promo .wrapper{
+    padding: 160px 20px 145px 20px;      
+}
+
+.promo .title{    
+    margin-top: 80px;
+    font-size: 90px;
+    font-family: "Yeseva One";    
+    text-align: center;              
+}
+
+.promo .inner-links{
+    font-size: 0;
+    text-align: center;
+}
+
+.promo .inner-links a{
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid #ffffff;
+    display: inline-block;    
+    letter-spacing: 0;
+    padding: 23px;
+    min-width: 230px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 15px;
+}
+
+.promo .inner-links a:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid #000000;
+}
