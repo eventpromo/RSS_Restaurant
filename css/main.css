@@ -1,3 +1,8 @@
+@font-face {
+    font-family: fa-brands-400;
+    src: url(../fonts/fa-brands-400.ttf); 
+}
+
 body{
     padding: 0;
     margin: 0;
@@ -32,7 +37,7 @@ h4{
 }
 
 p{
-    line-height: 1.6;    
+    line-height: 24px;    
     margin: 15px 0;
 }
 
@@ -45,12 +50,6 @@ header{
 
 header, footer, section {
     width: 100%;
-}
-
-body > footer{
-    background-color: #000000;    
-    height: 320px;
-    box-sizing: border-box;
 }
 
 .rhombus-pattern{
@@ -165,9 +164,35 @@ header nav a{
 header .social-icons {        
     display: table-cell;  
     vertical-align: middle; 
+    font-family: fa-brands-400;
 }
 
 header .social-icons a{
     color: #dab33e;
     font-size: 21px;
+    padding: 0 5px;
+}
+
+body > footer{
+    background-color: #191919;
+    height: 320px;
+    box-sizing: border-box;
+    color: #fefefe;
+    text-align: center;
+}
+
+body > footer .grid-container{    
+    grid-template-columns: 1fr 1fr 1fr;      
+    grid-template-rows: 320px;
+    align-items: center;        
+}
+
+body > footer .info{
+    padding: 0 15px;    
+}
+
+body > footer a{
+    font-family: fa-brands-400;
+    text-decoration: none;
+    color: #fefefe;
 }
