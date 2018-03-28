@@ -285,15 +285,26 @@
                                     Delicious Lambda cakes, muffins, and gourmet coffees make us hard to resist! Stop in today and check us out! Perfect materials
                                     and freshly baked food.
                                 </p>
-                                <form>
+                                <form class="form-block">
                                     <div class="input-block">
-                                        <label></label>
-                                        <input type="text">
+                                        <label for="name">Name</label>
+                                        <input type="text" id="name" placeholder="your name *" required />
                                     </div>
-                                    <div class="input-block"></div>
-                                    <div class="input-block"></div>
-                                    <div class="input-block"></div>
-                                    <div></div>
+                                    <div class="input-block">
+                                        <label for="email">Email</label>
+                                        <input type="text" id="email" placeholder="your email *" required />
+                                    </div>
+                                    <div class="input-block">
+                                        <label for="date">Date</label>
+                                        <input type="date" id="date" placeholder="date *" required />
+                                    </div>
+                                    <div class="input-block">
+                                        <label for="number">Party number</label>
+                                        <input type="number" id="number" placeholder="party number" />
+                                    </div>
+                                    <div class="button-block">
+                                        <input type="submit" value="Book now" />
+                                    </div>                                      
                                 </form>
                             </div>
                         </div>
