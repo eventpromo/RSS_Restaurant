@@ -29,19 +29,50 @@
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #c89f2d;    
+    border-top: 1px solid #c89f2d;     
+    border-image: url('../img/backgrounds/line.png') 1;   
     padding: 0; 
-    margin: 10px 0 0 0;
+    margin: 10px 0;
 }
 
 .menu .meal {    
     margin: 70px;
 }
 
-.menu .dish{    
+.meal__dish{   
+    margin-top:  35px;
     text-align: left;
+    position: relative;
 }
 
-.menu .price{
+.meal__dish p{
+    margin: 0;
+}
+
+.meal__dish_special{   
+    border: 1px solid; 
+    border-image: url('../img/backgrounds/border.png') 1;
+    padding: 10px;
+    margin: 25px -10px -10px -10px;
+}
+
+.meal__dish_special:after{
+    position: absolute;
+    content: 'Special';
+    display: inline-block;
+    background-image: url('../img/backgrounds/special.png');
+    width: 69px;
+    height: 22px;
+    color: #f8fafa;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    top: -22px;
+    right: -1px;
+}
+
+.dish__price{
     float: right;    
 }
