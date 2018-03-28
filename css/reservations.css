@@ -67,6 +67,8 @@
 .input-block input:focus{    
     outline: 1px solid #c89f2d;
     background-color: #ffffff;
+    box-sizing: border-box;
+    outline-offset: 0;
 }
 
 .button-block input[type="submit"]{
