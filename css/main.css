@@ -3,6 +3,11 @@
     src: url(../fonts/fa-brands-400.ttf); 
 }
 
+@font-face {
+    font-family: fa-regular-400;
+    src: url(../fonts/fa-regular-400.ttf); 
+}
+
 body{
     padding: 0;
     margin: 0;
