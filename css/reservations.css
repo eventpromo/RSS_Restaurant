@@ -42,7 +42,7 @@
     align-self: center;
 }
 
-.input-block label{
+.input-block label, .select-block label{
     color: #c9a131;
     font-family: "Open Sans";
     font-size: 14px;
@@ -51,7 +51,7 @@
     display: block;
 }
 
-.input-block input{
+.input-block input, .select-block select{
     box-sizing: border-box;
     width: 100%;
     padding: 7px 10px;
@@ -65,7 +65,32 @@
     position: relative; 
 }
 
-.input-block input:focus{    
+.select-block select{
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;    
+}
+
+.select-block__wraper{
+    position: relative;
+}
+
+.select-block__wraper:after {
+    color: transparent;
+    font-style: normal;
+    background: none;
+    display: block;
+    font-family: fa-solid-900;
+    content: '\f107';    
+    width: 13px;
+    height: 13px;
+    color: #7c7c7c;
+    position: absolute;
+    top: 12px;
+    right: 10px;
+}
+
+.input-block input:focus, .select-block select:focus{    
     outline: 1px solid #c89f2d;
     background-color: #ffffff;
     box-sizing: border-box;
@@ -91,16 +116,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     z-index: 1;
 }
 
-input[type="date"]::-webkit-datetime-edit-fields-wrapper{
-    font-size: 0;
-}
-
 input[type="date"]:focus{
     padding: 6px 10px;
-}
-
-input[type="date"]:focus::-webkit-datetime-edit-fields-wrapper {
-    font-size: 16px;
 }
   
 input[type="date"]:after {
@@ -118,7 +135,7 @@ input[type="date"]:after {
     right: 10px;
 }
 
-input[type="date"]:before {
+/* input[type="date"]:before {
     color: #7c7c7c;
     position: absolute;    
     content: attr(placeholder);    
@@ -126,4 +143,4 @@ input[type="date"]:before {
 
 input[type="date"]:focus:before {
     content: '';
-}
+} */

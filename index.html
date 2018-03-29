@@ -286,11 +286,19 @@
                                     </div>
                                     <div class="input-block">
                                         <label for="date">Date</label>
-                                        <input type="date" id="date" placeholder="date *" required />
+                                        <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" placeholder="date *" required />
                                     </div>
-                                    <div class="input-block">
+                                    <div class="select-block">
                                         <label for="number">Party number</label>
-                                        <input type="number" id="number" placeholder="party number" />
+                                        <div class="select-block__wraper">
+                                            <select id="number">
+                                                <option>party number</option>
+                                                <option value="1">1</option>
+                                                <option value="1">2</option>
+                                                <option value="1">3</option>
+                                                <option value="1">4</option>
+                                            </select>
+                                        </div>                                        
                                     </div>
                                     <div class="button-block">
                                         <input type="submit" value="Book now" />

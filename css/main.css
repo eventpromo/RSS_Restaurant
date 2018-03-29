@@ -8,6 +8,11 @@
     src: url(../fonts/fa-regular-400.ttf); 
 }
 
+@font-face {
+    font-family: fa-solid-900;
+    src: url(../fonts/fa-solid-900.ttf); 
+}
+
 body{
     padding: 0;
     margin: 0;
@@ -57,14 +62,34 @@ header, footer, section {
     width: 100%;
 }
 
-.rhombus-pattern{
-    background-image: url("../img/backgrounds/rhombus-pattern.png");
-    background-repeat: repeat;   
+.circle-pattern, .rhombus-pattern{
+    position: relative;
 }
 
-.circle-pattern{
-    background-image: url("../img/backgrounds/circle-pattern.png");
-    background-repeat: repeat;   
+.circle-pattern:before{
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;  
+    opacity: .02; 
+    z-index: -1;    
+    background-repeat: repeat; 
+    background-image: url("../img/backgrounds/circle-pattern.png");    
+}
+
+.rhombus-pattern:before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;  
+    opacity: .02; 
+    z-index: -1;    
+    background-repeat: repeat;  
+    background-image: url("../img/backgrounds/rhombus-pattern.png"); 
 }
 
 .wrapper{
