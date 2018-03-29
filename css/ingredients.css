@@ -20,6 +20,28 @@
     background-color: rgba(0, 0, 0, 0.33);
 }
 
-.ingredients .content img{
-    margin-top: 40px;
+.food-ingredients{
+    font-size: 0;  
+    width: 100%;
+    margin-top: 40px;  
+}
+
+.food-ingredients__img{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.09);
+    margin: 0 10px;
+    overflow: hidden;    
+}
+
+.wheat-img {
+    margin: -30px -40px;
+}
+.spices-img{
+    margin: -77px -40px;
+}
+.bread-img {
+    margin: -15px -40px;
 }
